@@ -3,6 +3,7 @@ const intents = Intents.FLAGS;
 const client = new Client({ presence: { activities: [{ name: "back in my day...", type: "PLAYING"}], status: "idle"}, intents: 
 [intents.GUILD_MESSAGES, intents.GUILDS]});
 const commands = require('./commands/commandHandler')
+require('dotenv').config()
 
 client.once('ready', () => {
     console.log('ready!')
@@ -29,15 +30,16 @@ client.once('ready', () => {
 	
 client.on('messageCreate', async msg => {
 	if (msg.author.bot) return;
-	try {
-		if (commands.commandHandler(msg) == undefined) {
-			return;
-		} else {
+	
+	if (commands.commandHandler(msg) == undefined) {
+		return;
+	} else {
+		try {
 			msg.channel.send(commands.commandHandler(msg))
 		}
-	}
-	catch(e) {
-		console.error(e)
+		catch(e) {
+			console.error(e)
+		}
 	}
 })
 console.log('logging in')

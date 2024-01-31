@@ -52,7 +52,7 @@ exports.commandHandler = function handleCommands(command) {
 		return ({
 			content: 'hi',
 			files: [{
-			attachment: './bot/grandpa.jpg',
+			attachment: '.././bot/grandpa.jpg',
 			name: 'grandpa.jpg' }]
 		})
 	} else if (command.content.includes('fuck') || command.content.includes('shit') || command.content.includes('bitch')) {
@@ -86,10 +86,9 @@ exports.commandHandler = function handleCommands(command) {
 			.setColor('7af5f1')
 			.setTitle('Grandfather Bot')
 			.setURL('https://discord.com/api/oauth2/authorize?client_id=800191043915218954&permissions=274945137728&scope=bot')
-			.setAuthor(command.author.tag, command.author.displayAvatarURL())
+			.setAuthor(command.author.username, command.author.displayAvatarURL())
 			.setDescription('About Grandfather Bot')
-			.addFields( { name: '**Creator**', value: 'extoplasm#0058 (in my defense, i was bored)', inline: true },
-						{ name: '**About**', value: 'Grandfather bot is a funny bot that acts like a stereotypical Grandfather', inline: true },
+			.addFields( { name: '**About**', value: 'Grandfather bot is a funny bot that acts like a stereotypical Grandfather', inline: true },
 						{ name: '**Invite**', value: 'Click the blue link at the top that says "Grandfather Bot" to invite this bot!', inline: true }, )
 			.setTimestamp()
 			.setFooter('Grandfather Bot')
