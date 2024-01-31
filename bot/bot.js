@@ -15,7 +15,7 @@ client.once('ready', () => {
 				setTimeout(() => {
 					client.user.setPresence({ activities: [{ name: `you kid's eyes are always glued to your phones...`, type: "PLAYING"}] })
 					setTimeout(() => {
-						client.user.setPresence({ activities: [{ name: `i used to hike over 18 different mountains to get to school`, type: "PLAYING"}] })
+						client.user.setPresence({ activities: [{ name: `kids these days...`, type: "PLAYING"}] })
 						setTimeout(() => {
 							setStatus()
 						}, 1000);
