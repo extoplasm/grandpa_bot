@@ -5,7 +5,7 @@
 Everyone is permitted to copy, distribute and change verbatim \
 copies of this license document.
 
-Permission is granted to do whatever the fuck you want with this \
+Permission is granted to do whatever the **** you want with this \
 software, including without limitation to the rights to use, \
 copy, modify, publish, distribute, merge, print out and eat, \
 wear as a hat etc. subject to the following conditions:
@@ -17,7 +17,7 @@ substantial portions of the software including this clause.
 portions of the software as their own. 
 
 4. Any persons using the software for commercial purposes must obtain \
-permission from the author or authors of this software
+permission from the author or authors of this software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, \
 EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF \
